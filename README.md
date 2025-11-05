@@ -9,7 +9,7 @@ The "To-Do List" application is a simple yet functional task list that allows us
 
 ## Demo
 
-https://malwinaprutis.github.io/todo-list-react/
+https://malwinaprutis.github.io/to-do-list-master/
 
 ## Technologies
 
