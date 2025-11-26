@@ -4,10 +4,9 @@
 
 The "To-Do List" application is a simple yet functional task list that allows users to create, edit, and delete tasks to manage daily activities. This project aims to help users organize their time and increase productivity.
 
+### 🔗 Demo
 
-## Demo
-
-$$\text{[http://MalwinaPrutis.github.io/todo-list-react-master](http://MalwinaPrutis.github.io/todo-list-react-master)\_11}$$
+[Zobacz demo aplikacji To-Do tutaj](http://MalwinaPrutis.github.io/todo-list-react-master_11)
 
 ## Technologies
 
