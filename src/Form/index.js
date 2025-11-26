@@ -1,6 +1,6 @@
 import { useState, useRef, useEffect } from "react";
 import { useDispatch } from "react-redux";
-import { addTask } from "../tasksSlice";
+import { addTask } from "./Tasks/tasksSlice";
 import { StyledForm, Button, Input } from "./styled";
 
 let nextId = 1;
