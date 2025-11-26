@@ -6,7 +6,7 @@ The "To-Do List" application is a simple yet functional task list that allows us
 
 
 ## Demo
-
+mała zmiana
 
 ## Technologies
 

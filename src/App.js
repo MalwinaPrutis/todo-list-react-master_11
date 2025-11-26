@@ -1,9 +1,9 @@
-import Form from "./features/tasks/Form";
-import TasksList from "./features/tasks/TasksList";
-import Buttons from "./features/tasks/Buttons";
-import Section from "./common/Section";
-import Header from "./common/Header";
-import { Container } from "./common/Container/styled";
+import Form from "./Form";
+import TasksList from "./Tasks";
+import Buttons from "./Buttons";
+import Section from "./Section";
+import Header from "./Header";
+import { Container } from './Container';
 
 function App() {
   return (
@@ -23,5 +23,4 @@ function App() {
     </Container>
   );
 }
-
 export default App;
