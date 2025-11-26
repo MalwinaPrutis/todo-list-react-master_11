@@ -6,13 +6,7 @@ The "To-Do List" application is a simple yet functional task list that allows us
 
 ## 🔗 Demo
 
-[Zobacz demo aplikacji To-Do tutaj](http://MalwinaPrutis.github.io/todo-list-react-master_11)
-
 🚀 [Kliknij, aby zobaczyć działającą Listę Zadań](https://malwinaprutis.github.io/todo-list-react-master_11/) 🌟
-
-## 🔗 Demo
-
-🛡️ [Zobacz demo aplikacji To-Do tutaj](https://malwinaprutis.github.io/todo-list-react-master_11/) 👉
 
 ## Technologies
 
