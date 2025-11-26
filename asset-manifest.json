@@ -1,0 +1,12 @@
+{
+  "files": {
+    "main.js": "/todo-list-react-master_11/static/js/main.1662c608.js",
+    "static/js/488.bf3bc093.chunk.js": "/todo-list-react-master_11/static/js/488.bf3bc093.chunk.js",
+    "index.html": "/todo-list-react-master_11/index.html",
+    "main.1662c608.js.map": "/todo-list-react-master_11/static/js/main.1662c608.js.map",
+    "488.bf3bc093.chunk.js.map": "/todo-list-react-master_11/static/js/488.bf3bc093.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/js/main.1662c608.js"
+  ]
+}
