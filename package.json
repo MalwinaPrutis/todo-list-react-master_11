@@ -2,7 +2,7 @@
   "name": "todo-list-react",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://malwinaprutis.github.io/todo-list-react/",
+  "homepage": "http://MalwinaPrutis.github.io/todo-list-react-master_11",
   "dependencies": {
     "@reduxjs/toolkit": "^2.9.0",
     "cra-template": "1.2.0",
