@@ -5,7 +5,8 @@ import {
     selectIsEveryTaskDone,
     toggleHideDone, 
     setAllDone 
-} from "../Tasks/tasksSlice";
+// Używamy nazwy folderu 'tasksLogic' (wszystkie małe litery)
+} from "../../features/tasks/tasksLogic/tasksSlice"; 
 import { Wrapper, Button } from "./styled";
 
 const Buttons = () => {

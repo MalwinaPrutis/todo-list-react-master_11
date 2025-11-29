@@ -1,14 +1,14 @@
-// src/features/tasks/TasksPage.js
+// src/features/tasks/TaskListPage.js
 
 import React from "react";
-// Importy z Twoich nowych lokalizacji (dostosowane do tego, jak przeniosłaś pliki):
 import Form from "../../common/Form";
-import TasksList from "./Tasks/TasksList"; // Uwaga: Importujemy TasksList.js z podfolderu Tasks/
+// OSTATECZNA POPRAWKA: Prawidłowy import TasksList.js (pliki są obok siebie w folderze 'tasks')
+import TasksList from "./TasksList.js"; 
 import Buttons from "../../common/Buttons";
 import Section from "../../common/Section";
 import Header from "../../common/Header";
 
-const TasksPage = () => (
+const TaskListPage = () => ( 
   <>
     <Header title="Lista zadań" />
     <Section title="Dodaj nowe zadanie" body={<Form />} />
@@ -16,4 +16,4 @@ const TasksPage = () => (
   </>
 );
 
-export default TasksPage;
+export default TaskListPage;

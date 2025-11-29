@@ -1,22 +1,19 @@
 // src/App.js
 
 import React from 'react';
-// Ważne: importujemy komponenty do routingu
-import { HashRouter, Switch, Route, Redirect } from "react-router-dom"; 
+import styled from "styled-components";
+import { HashRouter, Switch, Route, Redirect, NavLink } from "react-router-dom"; 
 
-// Link jest importowany z głównego index.js (gdzie pewnie masz styled.a)
-import { Link } from "./index.js"; 
-
-// Importujemy stronę z zadaniami (dostosowujemy do nowej struktury)
-import TasksPage from './features/tasks/TasksPage'; 
-// Importujemy stronę autora (już stworzoną przez Ciebie)
+// Ostateczna ścieżka: folder 'tasks', plik 'TaskListPage.js'.
+import TaskListPage from './features/tasks/TaskListPage.js'; 
+// Importujemy stronę autora
 import AuthorPage from './features/author/AuthorPage'; 
 
-// Importujemy stałe ze ścieżkami (ten plik zaraz stworzymy)
+// Importujemy stałe ze ścieżkami
 import { toTasks, toAuthor } from './routes'; 
 
-// Importujemy ogólny kontener (z nowej lokalizacji)
-import Container from "./common/Container/index.js"; 
+// Importujemy ogólny kontener
+import { Container } from "./common/Container/index.js";
 
 function App() {
   return (
@@ -37,7 +34,7 @@ function App() {
         {/* Sekcja routingu, gdzie będą przełączać się strony */}
         <Switch>
           <Route path={toTasks()}>
-            <TasksPage />
+            <TaskListPage /> 
           </Route>
           <Route path={toAuthor()}>
             <AuthorPage />
@@ -53,3 +50,17 @@ function App() {
 }
 
 export default App;
+
+// Definicja stylu Linka na dole pliku:
+export const Link = styled(NavLink)`
+  text-decoration: none;
+  color: ${({ theme }) => theme.color.teal};
+
+  &.active {
+    font-weight: bold;
+  }
+
+  &:hover {
+    filter: brightness(110%);
+  }
+`;
