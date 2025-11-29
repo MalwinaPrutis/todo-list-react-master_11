@@ -1,0 +1,17 @@
+[
+  {
+    "id": "1",
+    "content": "Nauczyć się podstaw React",
+    "done": true
+  },
+  {
+    "id": "2",
+    "content": "Stworzyć listę To Do",
+    "done": false
+  },
+  {
+    "id": "3",
+    "content": "Zastosować routing",
+    "done": false
+  }
+]
