@@ -1,9 +1,11 @@
 // src/features/tasks/tasksSaga.js
 
-import { takeLatest, call, put, delay } from "redux-saga/effects";
-import { fetchExampleTasks, setTasks } from "./tasksSlice"; // Używamy tasksSlice (mała litera)
+import { takeLatest, call, put, delay, takeEvery, select } from "redux-saga/effects"; 
+// Poprawiono TasksSlice na tasksSlice (mała litera) i dodano akcje Local Storage:
+import { fetchExampleTasks, setTasks, addTask, toggleTaskDone, removeTask, selectTasks } from "./tasksSlice"; 
 import { getExampleTasks } from "./getExampleTasks";
 
+// 1. Obsługa ładowania zadań asynchronicznie
 function* fetchExampleTasksHandler() {
     try {
         yield call(delay, 2000); 
@@ -14,27 +16,13 @@ function* fetchExampleTasksHandler() {
     }
 }
 
-// DRUGA FUNKCJA SAGI - DO ZAPISYWANIA W LOCAL STORAGE (Z Twojej wiadomości)
-import { takeEvery, select } from "redux-saga/effects";
-import { addTask, toggleTaskDone, removeTask, selectTasks } from "./tasksSlice"; 
-
+// 2. Obsługa zapisywania w Local Storage
 function* saveTasksInLocalStorage() {
-    // Pobieramy aktualne zadania ze stanu Redux
-    const tasks = yield select(selectTasks); 
-    // Zapisujemy je w Local Storage
+    const tasks = yield select(selectTasks);
     localStorage.setItem("tasks", JSON.stringify(tasks));
 }
-// ------------------------------------------------------------------------
 
 export function* tasksSaga() {
-    // 1. Obsługa ładowania zadań asynchronicznie (z getExampleTasks)
     yield takeLatest(fetchExampleTasks.type, fetchExampleTasksHandler);
-    
-    // 2. Obsługa zapisywania stanu do Local Storage po każdej zmianie zadania
-    yield takeEvery([
-        addTask.type, 
-        toggleTaskDone.type, 
-        removeTask.type, 
-        setTasks.type // setTask jest używane po załadowaniu danych
-    ], saveTasksInLocalStorage);
+    yield takeEvery([addTask.type, toggleTaskDone.type, removeTask.type, setTasks.type], saveTasksInLocalStorage);
 }
