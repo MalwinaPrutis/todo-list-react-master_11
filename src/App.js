@@ -5,7 +5,7 @@ import styled from "styled-components";
 import { HashRouter, Switch, Route, Redirect, NavLink } from "react-router-dom"; 
 
 // Ostateczna ścieżka: folder 'tasks' (małe litery), plik 'TaskListPage.js'.
-import TaskListPage from './features/tasks/TaskListPage.js'; 
+import TaskListPage from './features/tasks/TaskPage.js'; 
 // Importujemy stronę autora
 import AuthorPage from './features/author/AuthorPage'; 
 

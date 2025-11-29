@@ -2,7 +2,7 @@
 
 import React from "react";
 import { useSelector } from "react-redux";
-import { selectTasks, selectHideDone } from "./TasksSlice";
+import { selectTasks, selectHideDone } from "./tasksSlice";
 import { List, Item, Content, Button, Span } from "./styled";
 import { Link } from "react-router-dom";
 import { toTask } from "../../routes";
