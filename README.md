@@ -10,29 +10,26 @@ The "To-Do List" application is a simple yet functional task list that allows us
 
 ## Technologies
 
-- HTML
-- CSS (Flexbox, Grid)
-- JavaScript (ES6+)
-- JSX (JavaScript XML)
-- React.js 
-- React Hooks (`useState`, `useEffect`)
-- Redux Toolkit (`createSlice`, `useSelector`, `useDispatch`)
-- Local Storage API
-- Create React App (Webpack, Babel, ESLint, PostCSS, CSS Loader, Style Loader)
-- styled-components
-- ThemeProvider
+React: functional components with React Hooks (useState, useEffect, custom hooks)
+React Router: multi-page navigation and routing
+Redux Toolkit: global state management (createSlice, useSelector, useDispatch)
+Redux Saga: handling asynchronous tasks (tasksSaga)
+styled-components: component-level CSS-in-JS styling with theme support
+ThemeProvider: centralized theme and color management
+localStorage API: saving and restoring application state in the browser
+Fetch API / async-await: asynchronous data fetching
+Create React App: project setup and build configuration
+JavaScript, HTML5, CSS3: core front-end technologies (Flexbox, Grid)
 
 ## Usage
 
-Add new tasks
-
-Edit existing tasks
-
-Delete tasks
-
-Mark tasks as completed
-
-Store tasks in the device's local storage
+Add, complete, and remove tasks
+Filter and hide completed tasks
+Dynamic search using custom hooks (useQueryParameter, useReplaceQueryParameter)
+Load example tasks from an external source
+Automatic state saving to localStorage
+Built-in navigation and routing between pages (Tasks list / Task details / Author)
+Fully responsive design
 
 ## Contributing
 

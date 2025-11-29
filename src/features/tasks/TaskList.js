@@ -10,7 +10,7 @@ import { toTask } from "../../routes";
 // Importujemy stałą, którą właśnie stworzyłaś
 import searchQueryParamName from "./searchQueryParamName"; 
 // Musimy też zaimportować funkcję do odczytu query z paska adresu
-import useQueryParameter from "../../useQueryParameter"; 
+import useQueryParameter from "./useQueryParameter"; 
 
 const TasksList = () => {
     const tasks = useSelector(selectTasks);
