@@ -4,7 +4,7 @@ import React from 'react';
 import styled from "styled-components";
 import { HashRouter, Switch, Route, Redirect, NavLink } from "react-router-dom"; 
 
-// Ostateczna ścieżka: folder 'tasks', plik 'TaskListPage.js'.
+// Ostateczna ścieżka: folder 'tasks' (małe litery), plik 'TaskListPage.js'.
 import TaskListPage from './features/tasks/TaskListPage.js'; 
 // Importujemy stronę autora
 import AuthorPage from './features/author/AuthorPage'; 

@@ -2,8 +2,8 @@
 
 import React from "react";
 import Form from "../../common/Form";
-// OSTATECZNA POPRAWKA: Prawidłowy import TasksList.js (pliki są obok siebie w folderze 'tasks')
-import TasksList from "./TasksList.js"; 
+// OSTATECZNA POPRAWKA: Używamy TasksList (Duże T) z tego samego folderu.
+import TasksList from "./TasksList"; 
 import Buttons from "../../common/Buttons";
 import Section from "../../common/Section";
 import Header from "../../common/Header";

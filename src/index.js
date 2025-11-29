@@ -1,35 +1,26 @@
-import React from "react";
-import ReactDOM from "react-dom/client";
-import App from "./App";
-import reportWebVitals from "./reportWebVitals";
-import { ThemeProvider } from "styled-components";
-import { theme } from "./theme";
+// src/index.js
+
+import React from 'react';
+import ReactDOM from 'react-dom/client';
+import { ThemeProvider } from 'styled-components';
+// USUWAMY: import './index.css'; 
+// USUWAMY: import * as serviceWorker from './serviceWorker'; 
+import App from './App';
+import { theme } from './theme'; 
 import { GlobalStyle } from './GlobalStyle';
-import { Provider } from "react-redux";
-import store from "./store";
+import { Provider } from 'react-redux'; // Wracamy do Provider
+import store from './store'; // Wracamy do importu store
 
-// **********************************************
-// KROK 1: DODAJEMY IMPORT HASHROUTER
-// **********************************************
-import { HashRouter } from "react-router-dom"; 
+const root = ReactDOM.createRoot(document.getElementById('root'));
 
-const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
-  <React.StrictMode>
-    <Provider store={store}>
-      <ThemeProvider theme={theme}>
-        <GlobalStyle />
-        
-        {/* ******************************************
-            KROK 2: OTACZAMY APLIKACJĘ ROUTEREM
-            ****************************************** */}
-        <HashRouter>
-          <App />
-        </HashRouter>
-
-      </ThemeProvider>
-    </Provider>
-  </React.StrictMode>
+  <React.StrictMode>
+    {/* TERAZ Provider działa, bo mamy store.js! */}
+    <Provider store={store}>
+      <ThemeProvider theme={theme}> 
+        <GlobalStyle />
+        <App />
+      </ThemeProvider>
+    </Provider>
+  </React.StrictMode>
 );
-
-reportWebVitals();
